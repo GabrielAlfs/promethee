@@ -10,5 +10,14 @@
   "main": "index.js",
   "repository": "git@github.com:GabrielAlfs/promethee.git",
   "author": "Gabriel Alves <l.luis.gabriel@outlook.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
