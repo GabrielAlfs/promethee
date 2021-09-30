@@ -38,7 +38,8 @@
           ["@domain", "./src/domain/"],
           ["@implementation", "./src/implementation/"],
           ["@application", "./src/application/"]
-        ]
+        ],
+        "extensions": [".ts", ".js", ".json"]
       },
       "node": {
         "extensions": [".ts", ".js", ".json"]

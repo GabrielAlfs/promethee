@@ -11,6 +11,10 @@
   "repository": "git@github.com:GabrielAlfs/promethee.git",
   "author": "Gabriel Alves <l.luis.gabriel@outlook.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/application/index.ts",
+    "build": "tsc --project tsconfig.json"
+  },
   "devDependencies": {
     "@types/node": "^16.10.2",
     "@typescript-eslint/eslint-plugin": "^4.32.0",
