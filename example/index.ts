@@ -32,7 +32,7 @@ const alternatives: Array<Alternative> = [
 const criteria: Array<Criterion> = [
   {
     name: 'Preço',
-    weight: 0.25,
+    weight: 1,
     objective: 'minimize',
     preferenceFunction: buildLinearFunction({
       preference: 5000,
@@ -41,7 +41,7 @@ const criteria: Array<Criterion> = [
   },
   {
     name: 'Complexidade',
-    weight: 0.25,
+    weight: 1,
     objective: 'minimize',
     preferenceFunction: buildLinearFunction({
       preference: 1,
@@ -50,13 +50,13 @@ const criteria: Array<Criterion> = [
   },
   {
     name: 'Segurança',
-    weight: 0.25,
+    weight: 1,
     objective: 'maximize',
     preferenceFunction: buildLinearFunction({ preference: 2, indifference: 1 }),
   },
   {
     name: 'Desempenho',
-    weight: 0.25,
+    weight: 1,
     objective: 'maximize',
     preferenceFunction: buildLinearFunction({
       preference: 20,
@@ -66,7 +66,6 @@ const criteria: Array<Criterion> = [
 ];
 
 const resultOne = calculatePrometheeOne({ alternatives, criteria });
-
 const resultTwo = calculatePrometheeTwo({ alternatives, criteria });
 
 console.table(resultOne);

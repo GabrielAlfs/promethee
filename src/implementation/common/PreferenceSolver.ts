@@ -19,6 +19,16 @@ const distanceMatrix = ({
     );
 };
 
+const normalizeWeights = ({
+  criteria,
+}: {
+  criteria: Array<Criterion>;
+}): Array<Criterion> =>
+  criteria.map((criterion) => ({
+    ...criterion,
+    weight: criterion.weight / criteria.reduce((acc, v) => v.weight + acc, 0),
+  }));
+
 export const preferenceSolver = ({
   alternatives,
   criteria,
@@ -30,7 +40,7 @@ export const preferenceSolver = ({
     Array.from(Array(alternatives.length)).map(() => 0),
   );
 
-  criteria.forEach((criterion, criterionIndex) => {
+  normalizeWeights({ criteria }).forEach((criterion, criterionIndex) => {
     const distanceArray = distanceMatrix({
       matrix: alternatives.map((alternative) => alternative.evaluations),
       criterionIndex,

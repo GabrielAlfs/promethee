@@ -14,7 +14,7 @@ import {
 const criteria = [
   {
     name: 'Preço',
-    weight: 0.25,
+    weight: 1,
     objective: 'minimize',
     preferenceFunction: buildLinearFunction({
       preference: 5000,
@@ -23,7 +23,7 @@ const criteria = [
   },
   {
     name: 'Complexidade',
-    weight: 0.25,
+    weight: 1,
     objective: 'minimize',
     preferenceFunction: buildLinearFunction({
       preference: 1,
@@ -32,7 +32,7 @@ const criteria = [
   },
   {
     name: 'Segurança',
-    weight: 0.25,
+    weight: 1,
     objective: 'maximize',
     preferenceFunction: buildLinearFunction({
       preference: 2,
@@ -41,7 +41,7 @@ const criteria = [
   },
   {
     name: 'Desempenho',
-    weight: 0.25,
+    weight: 1,
     objective: 'maximize',
     preferenceFunction: buildLinearFunction({
       preference: 20,
