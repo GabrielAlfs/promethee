@@ -7,7 +7,7 @@
     "Preference Ranking Organization METHod for Enrichment Evaluation"
   ],
   "description": "A simplified package for calculating the multi-criteria decision analysis methods PROMETHEE I and II",
-  "main": "index.js",
+  "main": "dist/application/index.js",
   "repository": "git@github.com:GabrielAlfs/promethee.git",
   "author": "Gabriel Alves <l.luis.gabriel@outlook.com>",
   "license": "MIT",
