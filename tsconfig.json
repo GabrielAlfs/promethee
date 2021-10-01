@@ -15,7 +15,7 @@
     "paths": {
       "@domain/*": ["src/domain/*"],
       "@implementation/*": ["src/implementation/*"],
-      "@application/*": ["src/application/*"],
+      "@application/*": ["src/application/*"]
     }
   },
   "include": [
