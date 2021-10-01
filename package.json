@@ -1,6 +1,6 @@
 {
   "name": "promethee",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "keywords": [
     "PROMETHEE",
     "MCDA",
@@ -13,7 +13,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsnd --respawn --transpile-only -r tsconfig-paths/register ./src/application/index.ts",
-    "build": "tsc --project tsconfig.json && tscpaths -p tsconfig.json -s ./src -o ./dist"
+    "build": "tsc --project tsconfig.json && tscpaths -p tsconfig.json -s ./src -o ./dist",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "@types/node": "^16.10.2",
@@ -28,6 +29,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.4.1",
+    "semantic-release": "^18.0.0",
     "ts-node": "^10.2.1",
     "ts-node-dev": "^1.1.8",
     "tsconfig-paths": "^3.11.0",
